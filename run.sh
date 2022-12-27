@@ -8,7 +8,7 @@ echo "ngrok extract..."
 tar -xf ngrok.tgz > /dev/null 2>&1
 
 echo "ngrok config..."
-
+echo "open https://dashboard.ngrok.com/get-started/your-authtoken for get authtoken"
 read -p "ngrok authtoken: " authToken
 ./ngrok authtoken $authToken > /dev/null 2>&1
 ./ngrok config upgrade > /dev/null 2>&1
